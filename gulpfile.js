@@ -10,7 +10,7 @@ function html() {
     return src('src/app/index.html')
         .pipe(fileInclude({ prefix: '@@', basepath: '@file' }))
         .pipe(dest('dist'))
-        .pipe(browserSync.stream());
+        .pipe(browserSync.reload({ stream: true }));
 }
 
 function styles() {
@@ -29,7 +29,7 @@ function scripts() {
 }
 
 function images() {
-    return src('src/app/imgs/**/*')
+    return src('src/app/imgs/**/*', {encoding: false})
         .pipe(imagemin())
         .pipe(dest('dist/imgs'))
         .pipe(browserSync.stream());

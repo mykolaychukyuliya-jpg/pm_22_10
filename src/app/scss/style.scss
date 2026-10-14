@@ -1,9 +1,61 @@
 
-body {
-  background-color: #4a90e2; // Встановлює колір фону для всієї сторінки
+//body {
+  //background-color: #4a90e2; // Встановлює колір фону для всієї сторінки
 
-  h1 {
-    color: #f0f4f8; // Колір тексту заголовка
-    text-align: center; // Вирівнювання по центру
-  }
+  //h1 {
+    //color: #f0f4f8; // Колір тексту заголовка
+    //text-align: center; // Вирівнювання по центру
+  //}
+//}
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.resume-wrapper {
+  max-width: 850px;
+}
+
+.header-section {
+  height: 180px;
+}
+
+.photo-box {
+  width: 140px;
+  height: 160px;
+  background-color: #ddd;
+  position: absolute;
+  left: -70px;
+  top: 10px;
+  z-index: 10;
+}
+
+.square-accent {
+  width: 8px;
+  height: 8px;
+  background-color: #ffc107;
+  display: inline-block;
+}
+
+.circle-skill {
+  width: 45px;
+  height: 45px;
+  border: 3px solid #ffc107;
+  border-radius: 50%;
+  color: #ffc107;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.tracking-wider {
+  letter-spacing: 1.5px;
+}
+
+.tracking-wide {
+  letter-spacing: 1px;
+}
+
+.text-light-50 {
+  color: rgba(255, 255, 255, 0.7);
 }

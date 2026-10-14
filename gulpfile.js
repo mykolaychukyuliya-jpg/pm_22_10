@@ -27,7 +27,15 @@ function scripts() {
         .pipe(dest('dist/js'))
         .pipe(browserSync.stream());
 }
+function copyBootstrapCss() {
+    return src('./node_modules/bootstrap/dist/css/bootstrap.min.css')
+        .pipe(dest('dist/css'));
+}
 
+function copyBootstrapJs() {
+    return src('./node_modules/bootstrap/dist/js/bootstrap.min.js')
+        .pipe(dest('dist/js'));
+}
 function images() {
     return src('src/app/imgs/**/*', {encoding: false})
         .pipe(imagemin())
@@ -50,4 +58,7 @@ exports.html = html;
 exports.styles = styles;
 exports.scripts = scripts;
 exports.images = images;
-exports.default = series(parallel(html, styles, scripts, images), server);
+exports.default = series(parallel(html, styles, scripts, images, copyBootstrapCss, copyBootstrapJs), server);
+//exports.default = series(parallel(html, styles, scripts, images), server);
+exports.copyBootstrapCss = copyBootstrapCss;
+exports.copyBootstrapJs = copyBootstrapJs;

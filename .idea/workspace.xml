@@ -7,6 +7,8 @@
     <list default="true" id="e2dc2ffc-4dd8-4dd5-96e3-af36bb1ab6dc" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/scss/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/scss/style.scss" afterDir="false" />
@@ -60,21 +62,23 @@
     "git-widget-placeholder": "main",
     "javascript.preferred.runtime.type.id": "node",
     "js.buildTools.gulp.gulp_package_dir": "/Users/yuliyamykolaychuk/WebstormProjects/pm_22_10/node_modules/gulp",
-    "last_opened_file_path": "/Users/yuliyamykolaychuk/WebstormProjects/pm_22_10",
+    "last_opened_file_path": "/Users/yuliyamykolaychuk/WebstormProjects/pm_22_10/src/app/imgs",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.editor"
+    "settings.editor.selected.configurable": "preferences.editor",
+    "ts.external.directory.path": "/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/app/imgs" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Gulp.js.default">
     <configuration name="default" type="js.build_tools.gulp">
       <node-interpreter>project</node-interpreter>
       <node-options />
@@ -114,7 +118,8 @@
       <updated>1789631271856</updated>
       <workItem from="1789631273521" duration="881000" />
       <workItem from="1789635254650" duration="3146000" />
-      <workItem from="1789818768820" duration="15449000" />
+      <workItem from="1789818768820" duration="17953000" />
+      <workItem from="1790783902791" duration="17050000" />
     </task>
     <servers />
   </component>

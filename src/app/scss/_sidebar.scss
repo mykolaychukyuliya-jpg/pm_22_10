@@ -1,0 +1,73 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+.side-col {
+  padding: $u * 9.7 0 $u * 8.8;
+
+  .sec-title { @include sec-title($light, $dark, $u * 5.8); }
+  .content { padding: 0 $u * 2 0 $u * 5.8; }
+}
+
+.about-text {
+  font-weight: 300;
+  font-size: $u * 1.45;
+  line-height: $u * 2.2;
+  letter-spacing: .06em;
+  color: #555;
+}
+
+// список Bootstrap
+.contact-list {
+  --bs-list-group-bg: transparent;
+  --bs-list-group-border-width: 0;
+  --bs-list-group-item-padding-x: 0;
+  --bs-list-group-item-padding-y: 0;
+
+  .list-group-item {
+    display: flex;
+    flex-direction: column;
+    margin-top: $u * 1.4;
+    background: transparent;
+    border: 0;
+    font-size: $u * 1.45;
+
+    &:first-child { margin-top: 0; }
+
+    strong {
+      font-weight: 600;
+      font-size: $u * 1.9;
+      text-transform: uppercase;
+      margin-bottom: $u * .4;
+    }
+  }
+}
+
+// хобі (кнопки Bootstrap)
+.hobbies-row { gap: $u * 1.6 !important; }
+
+.hobby {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: $u * 1.1;
+
+  small { font-size: $u * 1.5; }
+}
+
+.hobby-btn {
+  @extend %flex-center;
+  --bs-btn-color: #{$yellow};
+  --bs-btn-border-color: #{$yellow};
+  --bs-btn-hover-bg: #{$yellow};
+  --bs-btn-hover-border-color: #{$yellow};
+  --bs-btn-hover-color: #{$dark};
+  --bs-btn-active-bg: #{$yellow};
+  --bs-btn-active-border-color: #{$yellow};
+  --bs-btn-active-color: #{$dark};
+  --bs-btn-border-width: #{$u * .25};
+  width: $u * 3.6;
+  height: $u * 3.6;
+  padding: 0;
+  font-size: $u * 1.8;
+  line-height: 1;
+}

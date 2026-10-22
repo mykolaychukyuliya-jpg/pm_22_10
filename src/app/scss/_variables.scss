@@ -1,0 +1,21 @@
+@use 'sass:math';
+
+// кольори
+$yellow: #f7c944;
+$dark: #2b2e34;
+$band: #3b3e45;
+$light: #f1f1f1;
+$white: #fff;
+
+// шрифти (з запасними варіантами)
+$f-head: 'Montserrat', 'Segoe UI', Verdana, Arial, sans-serif;
+$f-display: 'Oswald', 'Arial Narrow', 'Impact', Arial, sans-serif;
+$f-body: 'Poppins', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+
+// відступи
+$u: 1cqw;
+$page-max: 800px;
+$gap: $u * 2.6;
+
+// математичні операції
+$panel-offset: percentage(math.div(6.5, 66.667));

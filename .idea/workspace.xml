@@ -5,13 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e2dc2ffc-4dd8-4dd5-96e3-af36bb1ab6dc" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/app/components/_footer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/components/_main.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/scss/_content.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/scss/_footer.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/scss/_header.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/scss/_mixins.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/scss/_sidebar.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/scss/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/scss/main.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/_header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/_header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/_sidebar.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/_sidebar.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/scss/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/scss/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/scss/style.scss" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +32,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -51,8 +62,9 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
     "Gulp.js.default.executor": "Run",
-    "Gulp.js.pm_22_10.executor": "Debug",
+    "Gulp.js.pm_22_10.executor": "Run",
     "JavaScript Debug.index.html.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -64,8 +76,10 @@
     "js.buildTools.gulp.gulp_package_dir": "/Users/yuliyamykolaychuk/WebstormProjects/pm_22_10/node_modules/gulp",
     "last_opened_file_path": "/Users/yuliyamykolaychuk/WebstormProjects/pm_22_10/src/app/imgs",
     "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.jshint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.jshint": "",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "preferences.editor",
@@ -77,8 +91,13 @@
       <recent name="$PROJECT_DIR$/src/app/imgs" />
       <recent name="$PROJECT_DIR$" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/app" />
+      <recent name="$PROJECT_DIR$/src/app/scss" />
+      <recent name="$PROJECT_DIR$/src/app/components" />
+    </key>
   </component>
-  <component name="RunManager" selected="Gulp.js.default">
+  <component name="RunManager" selected="Gulp.js.pm_22_10">
     <configuration name="default" type="js.build_tools.gulp">
       <node-interpreter>project</node-interpreter>
       <node-options />
@@ -119,7 +138,7 @@
       <workItem from="1789631273521" duration="881000" />
       <workItem from="1789635254650" duration="3146000" />
       <workItem from="1789818768820" duration="17953000" />
-      <workItem from="1790783902791" duration="17050000" />
+      <workItem from="1790783902791" duration="41142000" />
     </task>
     <servers />
   </component>

@@ -2,6 +2,9 @@
 @use 'mixins' as *;
 
 .panel-dark {
+  flex: 1 1 auto;
+  height: auto !important;
+  gap: $u * 3;
   margin-left: $panel-offset;
   padding: $u * 9.7 0 $u * 6.5;
   background: $dark;

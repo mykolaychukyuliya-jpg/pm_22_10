@@ -2,11 +2,15 @@
 @use 'mixins' as *;
 
 .side-col {
+  gap: $u * 3;
   padding: $u * 9.7 0 $u * 8.8;
 
   .sec-title { @include sec-title($light, $dark, $u * 5.8); }
   .content { padding: 0 $u * 2 0 $u * 5.8; }
 }
+
+  .sec-title { @include sec-title($light, $dark, $u * 5.8); }
+  .content { padding: 0 $u * 2 0 $u * 5.8; }
 
 .about-text {
   font-weight: 300;

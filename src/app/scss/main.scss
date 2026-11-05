@@ -4,6 +4,7 @@
 @use 'content';
 @use 'sidebar';
 @use 'footer';
+@use 'interactive';
 
 body {
   background: #d6d6d6;
@@ -29,7 +30,14 @@ h1, h2, h3, p, ul { @extend %no-margin; }
   overflow: hidden;
 }
 
-.resume-body { min-height: $u * 103; }
+// колонки завжди в один ряд, темна панель тягнеться на всю висоту
+.resume-body {
+  min-height: $u * 103;
+  flex-wrap: nowrap;
+
+  > main { display: flex; min-width: 0; }
+  > aside { min-width: 0; }
+}
 
 @media print {
   body { background: $white; padding: 0; }

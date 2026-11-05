@@ -1,0 +1,28 @@
+@use 'variables' as *;
+
+.is-hidden { display: none !important; }
+
+//згортання щоб блоки підходили одне до одного
+.panel-dark:has(.is-hidden),
+.side-col:has(.is-hidden) {
+  justify-content: flex-start !important;
+  gap: $u * 5;
+}
+
+// стрілка в заголовку розділу
+.arrow {
+  position: relative;
+  z-index: 2;
+  margin-left: auto;
+  margin-right: $u * 1.5;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: $yellow;
+  font-size: $u * 2.4;
+  line-height: 1;
+  cursor: pointer;
+  transition: transform .25s ease;
+
+  &.rotated { transform: rotate(180deg); }
+}

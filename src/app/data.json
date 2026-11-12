@@ -1,0 +1,27 @@
+{
+  "person": {
+    "firstName": "Василь",
+    "lastName": "Rigaurio",
+    "position": "UI/UX Designer"
+  },
+  "jobs": [
+    {
+      "position": "Enter Job Position Here",
+      "period": "Present",
+      "company": "Company Name / Location",
+      "description": "Lorem ipsum dolor sit amet, this is a thena consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore"
+    },
+    {
+      "position": "Enter Job Position Here",
+      "period": "2015 - 2017",
+      "company": "Company Name / Location",
+      "description": "Lorem ipsum dolor sit amet, this is a thena consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore"
+    }
+  ],
+  "skills": [
+    { "name": "Adobe photoshop", "level": 88 },
+    { "name": "Adobe Illustrator", "level": 85 },
+    { "name": "Adobe Indesign", "level": 82 },
+    { "name": "Power Point", "level": 80 }
+  ]
+}

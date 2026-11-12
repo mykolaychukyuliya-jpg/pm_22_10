@@ -1,8 +1,9 @@
 @use 'variables' as *;
 
+// службовий клас для приховування контенту
 .is-hidden { display: none !important; }
 
-//згортання щоб блоки підходили одне до одного
+// якщо в колонці є згорнутий блок, розділи підсуваються вгору і йдуть один за одним
 .panel-dark:has(.is-hidden),
 .side-col:has(.is-hidden) {
   justify-content: flex-start !important;
@@ -25,4 +26,18 @@
   transition: transform .25s ease;
 
   &.rotated { transform: rotate(180deg); }
+}
+
+// службове повідомлення про помилку
+.status-message {
+  position: fixed;
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  padding: 8px 16px;
+  border-radius: 6px;
+  background: #b3261e;
+  color: #fff;
+  font-size: 14px;
 }

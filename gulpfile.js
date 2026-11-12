@@ -30,6 +30,12 @@ function scripts() {
         .pipe(browserSync.stream());
 }
 
+function copyData() {
+    return src('src/app/data.json')
+        .pipe(dest('dist'))
+        .pipe(browserSync.reload({ stream: true }));
+}
+
 function copyBootstrapCss() {
     return src('./node_modules/bootstrap/dist/css/bootstrap.min.css')
         .pipe(dest('dist/css'));
@@ -55,6 +61,7 @@ function server() {
     watch('src/app/components/**/*.html', html);
     watch('src/app/scss/**/*.scss', styles);
     watch('src/app/js/**/*.js', scripts);
+    watch('src/app/data.json', copyData);
     watch('src/app/imgs/**/*', images);
 }
 
@@ -62,9 +69,10 @@ exports.html = html;
 exports.styles = styles;
 exports.scripts = scripts;
 exports.images = images;
+exports.copyData = copyData;
 exports.copyBootstrapCss = copyBootstrapCss;
 exports.copyBootstrapJs = copyBootstrapJs;
 exports.default = series(
-    parallel(html, styles, scripts, images, copyBootstrapCss, copyBootstrapJs),
+    parallel(html, styles, scripts, images, copyData, copyBootstrapCss, copyBootstrapJs),
     server
 );
